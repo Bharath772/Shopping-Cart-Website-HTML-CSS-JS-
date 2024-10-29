@@ -1,0 +1,161 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css");
+
+/* Reset Page */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+
+body {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Header Section */
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #212529;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.cart {
+  background-color: white;
+  color: white;
+  padding: 10px;
+  border-radius: 10%;
+  position: relative;
+}
+
+.cart-amount {
+  background-color: red;
+  padding: 8px;
+  border-radius: 10%;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+
+/* Main Section */
+
+/* Shop-section  */
+
+.shop-section {
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .shop-section {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .shop-section {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
+
+.items {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bi-dash {
+  color: green;
+}
+
+.bi-plus {
+  color: red;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: black;
+  color: white;
+  border-radius: 10%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+/* shopping-cart styles */
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+}
+
+/* cart-item styles  */
+
+.cart-item {
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+}
+
+.title-price-x {
+  width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: #212529;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
